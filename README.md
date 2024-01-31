@@ -10,6 +10,8 @@ Current implementation adds each button as a device in Alexa.
 
 ## How to replicate
 
+I recommend that you setup the DHCP server of your router to make the ESP32 ip address static.
+
 ### Materials
 
 1. 1 ESP32
