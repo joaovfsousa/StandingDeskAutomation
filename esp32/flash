@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+pio lib install
+
+pio run --target upload
