@@ -10,7 +10,7 @@ Use an ESP32 to connect a TiMotion TDH6 desk controller to Alexa.
 
 I'm definitely not a eletrical engineer or hardware guy, so I create this "diagram" in Excalidraw.
 
-[](./Excalidraw.png)
+![](./Excalidraw.png)
 
 ### Materials
 
@@ -23,6 +23,10 @@ I'm definitely not a eletrical engineer or hardware guy, so I create this "diagr
 
 ## Http Endpoint
 
-Fauxmo exposes this endpoint, so you can control the device using a HTTP Request
+Fauxmo exposes this endpoint, so you can control the device using a HTTP POST Request. A body is mandatory,
+but the content doesn't matter.
 
 `http://${YOUR_ESP_32_IP}:80/api/devices/lights/${MEMORY_BUTTON_NUMBER}/state/ON`
+
+Using curl:
+`curl -X POST http://${YOUR_ESP_32_IP}:80/api/devices/lights/${MEMORY_BUTTON_NUMBER}/state/ON -d 0`
