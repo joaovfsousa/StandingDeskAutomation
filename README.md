@@ -22,15 +22,17 @@ Current implementation adds each button as a device in Alexa.
 ### How to flash the firmware
 
 1. Install [PlatformIO cli](https://docs.platformio.org/en/stable/core/installation/methods/index.html)
-2. Put your wifi credentials in the file `esp32/src/main.cpp` lines 8 and 9.
-3. If you want to set the name that each button will display in Alexa, change them the lines 13 to 16.
-4. `cd esp32`
-5. `chmod +x flash`
-6. `./flash`
+2. Connect your ESP32 to your computer using a usb cable.
+3. Put your wifi credentials in the file `esp32/src/main.cpp` lines 8 and 9.
+4. If you want to set the name that each button will display in Alexa, change them the lines 13 to 16.
+5. Run `cd esp32`
+6. Then `chmod +x flash`
+7. And finally `./flash`
 
 ### Electrical scheme
 
-I'm definitely not a eletrical engineer or hardware guy, so I create this "diagram" in Excalidraw.
+Solder the components in the fenolite plate based on the diagram below.
+As you can see, I'm definitely not a eletrical engineer or hardware guy, hope you can understand it.
 
 ![](./Excalidraw.png)
 
